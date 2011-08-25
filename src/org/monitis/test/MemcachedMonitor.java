@@ -26,13 +26,13 @@ import org.monitis.utils.TimeUtility;
 
 public class MemcachedMonitor extends  IGenericCustomMonitor {
 	
-	private static final String apiKey = "2PE0HVI4DHP34JACKCAE37IOD4";
-	private static final String secretKey = "7OI90FU3C3DA8ENLNJ0JGGOGO0";
-    private static final String monitor_name = "Custom_monitor";//Name
-    private static final String monitor_tag_value = "Memcached_monitor";//Monitor Group
-    private static String servers = "localhost:11211";//local memcached server
-    private static final long processingTime = 60;//default value - 60 sec (1 min)
-    private static final long testDuration = 600;//default value - 600 sec (10 min)
+	private static final String apiKey = "2PE0HVI4DHP34JACKCAE37IOD4";		// <- replace by your API key (can be get from your Monitis account)
+	private static final String secretKey = "7OI90FU3C3DA8ENLNJ0JGGOGO0";	// <- replace by your Secure key (can be get from your Monitis account)
+    private static final String monitor_name = "Custom_monitor";			// <- replace by your desired monitor name
+    private static final String monitor_tag_value = "Memcached_monitor";	// <- replace by your desired monitor Group
+    private static String servers = "localhost:11211";						// <- replace by your monitored Memcached server connection parameters
+    private static final long processingTime = 60;							//default value - 60 sec (1 min)
+    private static final long testDuration = 600;							//default value - 600 sec (10 min)
     private static Map<InetSocketAddress,Map<String,String>> settings = null;
 
 	
